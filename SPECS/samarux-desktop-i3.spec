@@ -6,6 +6,7 @@ License:        GPL
 Source: 	%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-root
 Packager: 	Enrique Gil (mahoul@gmail.com)
+BuildRequires:	rsync
 Requires:	samarux-desktop-i3-session, samarux-desktop-lightdm, samarux-desktop-i3-skel, samarux-desktop-i3-scripts, dunst, feh, fira-code-fonts, galculator, gnome-flashback, gnome-session-xsession, gnome-terminal, guake, htop, i3, ImageMagick, lm_sensors, mc, mozilla-fira-sans-fonts, nemo, parcellite, pasystray, pavucontrol, picom, polybar, rofi, vim, xorg-x11-xinit-session
 BuildArch:	noarch
 
