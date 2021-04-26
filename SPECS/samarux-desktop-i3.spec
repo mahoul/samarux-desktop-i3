@@ -1,13 +1,13 @@
 Name:           samarux-desktop-i3
 Version:        0.1
-Release:        17
+Release:        18
 Summary:        samarux-desktop-i3 meta package
 License:        GPL
 Source: 	%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-root
 Packager: 	Enrique Gil (mahoul@gmail.com)
 BuildRequires:	rsync
-Requires:	samarux-desktop-i3-session, samarux-desktop-lightdm, samarux-desktop-i3-skel, samarux-desktop-i3-scripts, dconf-editor, dunst, eog, feh, fira-code-fonts, galculator, gnome-flashback, gnome-session-xsession, gnome-software, gnome-system-monitor, gnome-terminal, guake, gvfs-nfs, gvfs-smb, htop, i3, ImageMagick, lm_sensors, mc, mozilla-fira-sans-fonts, nemo, openssl, parcellite, pasystray, pavucontrol, picom, polybar, rofi, vim, xorg-x11-xinit-session
+Requires:	samarux-desktop-i3-session, samarux-desktop-i3-skel, samarux-desktop-i3-scripts, dconf-editor, dunst, eog, feh, fira-code-fonts, galculator, gnome-flashback, gnome-session-xsession, gnome-software, gnome-system-monitor, gnome-terminal, guake, gvfs-nfs, gvfs-smb, htop, i3, ImageMagick, lm_sensors, mc, mozilla-fira-sans-fonts, nemo, openssl, parcellite, pasystray, pavucontrol, picom, polybar, rofi, vim, xorg-x11-xinit-session
 BuildArch:	noarch
 
 %description
@@ -27,6 +27,9 @@ of the required packages (session files and /etc/skel content).
 %defattr(-, root, root)
 
 %changelog
+* Mon Apr 26 2021 Enrique Gil <mahoul@gmail.com> - 0.1-18
+- Removed samarux-desktop-lightdm as dependency
+
 * Sun Apr 25 2021 Enrique Gil <mahoul@gmail.com> - 0.1-17
 - Removed vlc and gcolor2 dependencies
 
