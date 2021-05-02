@@ -1,13 +1,13 @@
 Name:           samarux-desktop-i3
 Version:        0.1
-Release:        18
+Release:        19
 Summary:        samarux-desktop-i3 meta package
 License:        GPL
 Source: 	%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-root
 Packager: 	Enrique Gil (mahoul@gmail.com)
 BuildRequires:	rsync
-Requires:	samarux-desktop-i3-session, samarux-desktop-i3-skel, samarux-desktop-i3-scripts, dconf-editor, dunst, eog, feh, fira-code-fonts, galculator, gnome-flashback, gnome-session-xsession, gnome-software, gnome-system-monitor, gnome-terminal, guake, gvfs-nfs, gvfs-smb, htop, i3, ImageMagick, lm_sensors, mc, mozilla-fira-sans-fonts, nemo, openssl, parcellite, pasystray, pavucontrol, picom, polybar, rofi, vim, xorg-x11-xinit-session
+Requires:	samarux-desktop-i3-session, samarux-desktop-i3-skel, samarux-desktop-i3-scripts, dunst, feh, galculator, gnome-flashback, gnome-session-xsession, i3, lm_sensors, mc, parcellite, pasystray, picom, polybar, rofi, xorg-x11-xinit-session
 BuildArch:	noarch
 
 %description
@@ -27,6 +27,9 @@ of the required packages (session files and /etc/skel content).
 %defattr(-, root, root)
 
 %changelog
+* Sun May 02 2021 Enrique Gil <mahoul@gmail.com> - 0.1-19
+- Moved some required packages to samarux-desktop-common
+
 * Mon Apr 26 2021 Enrique Gil <mahoul@gmail.com> - 0.1-18
 - Removed samarux-desktop-lightdm as dependency
 
