@@ -1,13 +1,13 @@
 Name:           samarux-desktop-i3
 Version:        0.1
-Release:        19
+Release:        20
 Summary:        samarux-desktop-i3 meta package
 License:        GPL
 Source: 	%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-root
 Packager: 	Enrique Gil (mahoul@gmail.com)
 BuildRequires:	rsync
-Requires:	samarux-desktop-i3-session, samarux-desktop-i3-skel, samarux-desktop-i3-scripts, dunst, feh, galculator, gnome-flashback, gnome-session-xsession, i3, lm_sensors, mc, parcellite, pasystray, picom, polybar, rofi, xorg-x11-xinit-session
+Requires:	samarux-desktop-i3-session, samarux-desktop-i3-skel, samarux-desktop-i3-scripts, dunst, feh, galculator, gnome-flashback, gnome-session-xsession, i3, lm_sensors, mc, mousepad, parcellite, pasystray, picom, polybar, rofi, xorg-x11-xinit-session
 BuildArch:	noarch
 
 %description
@@ -27,6 +27,9 @@ of the required packages (session files and /etc/skel content).
 %defattr(-, root, root)
 
 %changelog
+* Sun May 09 2021 Enrique Gil <mahoul@gmail.com> - 0.1-20
+- Added mousepad as a dependency
+
 * Sun May 02 2021 Enrique Gil <mahoul@gmail.com> - 0.1-19
 - Moved some required packages to samarux-desktop-common
 
